@@ -31,21 +31,21 @@ class CheckDockerfileContent extends Command
      */
     protected string $necessaryContent = 'RUN \
     rm -rf /var/task/content/ \
-    rm -rf /var/task/users/ \
-    rm -rf /var/task/resources/blueprints/ \
-    rm -rf /var/task/resources/fieldsets/ \
-    rm -rf /var/task/resources/forms/ \
-    rm -rf /var/task/resources/users/ \
-    rm -rf /var/task/public/vendor/statamic/cp/svg/ \
-    rm -rf /var/task/public/vendor/statamic/cp/img/ \
-    ln -s /tmp/statamic-files/content /var/task/content \
-    ln -s /tmp/statamic-files/users /var/task/users \
-    ln -s /tmp/statamic-files/resources/blueprints /var/task/resources/blueprints \
-    ln -s /tmp/statamic-files/resources/fieldsets /var/task/resources/fieldsets \
-    ln -s /tmp/statamic-files/resources/forms /var/task/resources/forms \
-    ln -s /tmp/statamic-files/resources/users /var/task/resources/users \
-    ln -s /var/task/vendor/statamic/cms/resources/svg /var/task/public/vendor/statamic/cp/svg \
-    ln -s /var/task/vendor/statamic/cms/resources/img /var/task/public/vendor/statamic/cp/img';
+    && rm -rf /var/task/users/ \
+    && rm -rf /var/task/resources/blueprints/ \
+    && rm -rf /var/task/resources/fieldsets/ \
+    && rm -rf /var/task/resources/forms/ \
+    && rm -rf /var/task/resources/users/ \
+    && rm -rf /var/task/public/vendor/statamic/cp/svg/ \
+    && rm -rf /var/task/public/vendor/statamic/cp/img/ \
+    && ln -s /tmp/statamic-files/content /var/task/content \
+    && ln -s /tmp/statamic-files/users /var/task/users \
+    && ln -s /tmp/statamic-files/resources/blueprints /var/task/resources/blueprints \
+    && ln -s /tmp/statamic-files/resources/fieldsets /var/task/resources/fieldsets \
+    && ln -s /tmp/statamic-files/resources/forms /var/task/resources/forms \
+    && ln -s /tmp/statamic-files/resources/users /var/task/resources/users \
+    && ln -s /var/task/vendor/statamic/cms/resources/svg /var/task/public/vendor/statamic/cp/svg \
+    && ln -s /var/task/vendor/statamic/cms/resources/img /var/task/public/vendor/statamic/cp/img';
 
     /**
      * Create a new command instance.
